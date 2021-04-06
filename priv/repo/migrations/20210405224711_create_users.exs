@@ -5,7 +5,7 @@ defmodule MyApp.Repo.Migrations.CreateUsers do
     create table(:users, primary_key: false) do
       add :id, :binary_id, primary_key: true
       add :email, :string, null: false
-      add :password_hash. :string
+      add :password_hash, :string
       add :is_active, :boolean, default: false, null: false
 
       timestamps()
